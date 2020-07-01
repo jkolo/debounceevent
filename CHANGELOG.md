@@ -3,6 +3,10 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.6] 2020-07-02
+### Added
+- Support for button with frequency on input
+
 ## [2.0.5] 2019-02-07
 ### Fixed
 - Do digitalRead after setting pin mode (thanks to @mcspr)

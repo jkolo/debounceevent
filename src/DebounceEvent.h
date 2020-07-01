@@ -33,6 +33,7 @@
 #define BUTTON_SWITCH           1
 #define BUTTON_DEFAULT_HIGH     2
 #define BUTTON_SET_PULLUP       4
+#define BUTTON_FREQUENCY_INPUT  8
 
 #define DEBOUNCE_DELAY          50
 #define REPEAT_DELAY            500
@@ -66,10 +67,11 @@ class DebounceEvent {
         uint8_t _defaultStatus;
         unsigned long _delay;
         unsigned long _repeat;
+        bool _frequencyInput;
         DEBOUNCE_EVENT_CALLBACK_SIGNATURE;
 
         void _init(uint8_t pin, uint8_t mode, unsigned long delay, unsigned long repeat);
-
+        bool _getPinState();
 };
 
 #endif
